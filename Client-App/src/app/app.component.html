@@ -1,0 +1,23 @@
+<div class="main-container">
+    <div class="main mat-typography app-frame mat-app-background" [class.background-image-light]="!darkMode" [class.background-image-dark]="darkMode">
+        <div class="row" style="height:50px">
+            <div class="col header-container">
+                <span class="header-name">Benito Zefferino</span>
+                <dark-mode-toggle></dark-mode-toggle>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <main>
+                    <router-outlet></router-outlet>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bottom-bar" [class.bottom-bar-light]="!darkMode" [class.bottom-bar-dark]="darkMode">
+                <span class="copyright">Copyright © 2022 Benito Zefferino</span>
+                <a href="https://github.com/bzefferino/zefferino" matTooltip="Check out code for this website!"><img style="height: 40px; margin-left: 5px;" src="/assets/icons/github.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>

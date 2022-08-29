@@ -1,0 +1,18 @@
+  .dark-mode-container {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+
+  .dark-mode-toggle {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .dark-mode-container {
+      top: auto;
+      bottom: 60px;
+      right: 20px;
+    }
+  }

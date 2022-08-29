@@ -1,0 +1,68 @@
+body,
+html {
+  height: 100%;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.background-image {
+  &-light {
+    background-repeat: repeat;
+    background-size: 18em;
+    background-image: url("../assets/light-background-image.webp");
+  }
+
+  &-dark {
+    background-size: cover;
+    background-image: url("../assets/gradient.webp");
+  }
+}
+
+.header {
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-name {
+    margin-top: 40px;
+    font-size: 2.8em;
+  }
+}
+
+.bottom-bar {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-dark {
+    background-color: rgb(8, 13, 23);
+    color: rgb(241, 241, 241);
+  }
+
+  &-light {
+    background-color: rgb(241, 241, 241);
+    color: rgb(15, 15, 16);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-name {
+    font-size: 1.8em;
+  }
+}

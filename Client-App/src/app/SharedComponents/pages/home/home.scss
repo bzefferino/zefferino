@@ -1,0 +1,38 @@
+.container {
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.coming-soon {
+  &-header {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+
+  &-offset {
+    margin-top: -160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .coming-soon {
+    &-header {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    &-offset {
+      margin-top: -100px;
+    }
+  }
+}

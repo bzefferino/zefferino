@@ -1,0 +1,41 @@
+@use '@angular/material' as mat;
+
+.main-container {
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    margin-top: 100px;
+}
+
+.form-row {
+    padding: 20px;
+    border-radius: 8px;
+    @include mat.elevation(8);
+
+    &-dark {
+        background-color: #232528DD;
+    }
+
+    &-light {
+        background-color: #fafafaDD;
+    }
+}
+
+.mat-form-field {
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+
+    .form-container {
+        margin-top: 50px;
+    }
+
+    .mat-form-field {
+        min-width: 200px;
+        width: calc(100vw - 150px);
+    }
+}
